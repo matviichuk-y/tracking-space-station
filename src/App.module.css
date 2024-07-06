@@ -1,0 +1,30 @@
+.app {
+  display: grid;
+  grid-template-rows: auto 1.5fr;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: center; 
+  align-content: center;   
+  height: 100vh;           
+}
+
+.locationInfo {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.currentTime {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.locationOnMap {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.peopleInSpace {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}

@@ -1,0 +1,25 @@
+.container {
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.peopleList {
+  flex-grow: 1;
+  margin: 15px 0px;
+}
+
+.totalAmount {
+  margin-top: auto;
+  text-align: center;
+}
