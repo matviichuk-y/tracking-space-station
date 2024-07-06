@@ -5,8 +5,8 @@
   gap: 1rem;
   padding: 1rem;
   justify-content: center; 
-  align-content: center;   
-  height: 100vh;           
+  align-content: center;     
+  min-height: 100vh;
 }
 
 .locationInfo {
