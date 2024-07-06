@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './App.module.css'; 
+import styles from './styles/App.module.css'
 import CurrentTime from './components/CurrentTime/CurrentTime';
 import LocationInfo from './components/LocationInfo/LocationInfo';
 import LocationOnMap from './components/LocationOnMap/LocationOnMap';

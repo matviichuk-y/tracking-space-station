@@ -1,4 +1,5 @@
 import { ISSMember } from "../../../types/iss"
+import People from "../People/People";
 import styles from './PeopleList.module.css'
 
 interface PeopleListProps {
@@ -7,14 +8,14 @@ interface PeopleListProps {
 
 const PeopleList: React.FC<PeopleListProps> = ({ crew }) => {
   return (
-    <ul>
-      {crew.map((person) => (
-        <li key={person.name} className={styles.person}>
-          <span className={styles.icon}>👤</span>
-          {person.name}
-        </li>
-      ))}
-    </ul>
+    <>
+      <h2 className={styles.title}>Current ISS Crew</h2>
+      <ul className={styles.peopleList}>
+        {crew.map((person) => (
+          <People person={person} />
+        ))}
+      </ul>
+    </>
   )
 }
 

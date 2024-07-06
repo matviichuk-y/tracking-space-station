@@ -19,15 +19,10 @@ const PeopleInSpace: React.FC = () => {
     }
 
     return (
-        <>
-            <div className={styles.container}>
-                <h2 className={styles.title}>Current ISS Crew</h2>
-                <div className={styles.peopleList}>
-                    <PeopleList crew={crew} />
-                </div>
-                <div className={styles.totalAmount}>Total amount: {crew.length} people on ISS</div>
-            </div>
-        </>
+        <div className={styles.container}>
+            <PeopleList crew={crew} />
+            <div className={styles.totalAmount}>Total amount: {crew.length} people on ISS</div>
+        </div>
     )
 }
 
